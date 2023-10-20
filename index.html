@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerenciador de Pedidos</title>
+</head>
+
+<body>
+    <h1>Gerenciador de Pedidos</h1>
+    <div class="main">
+        
+        <div class="pedidos-main">
+            <h2>Adicione os itens do seu pedido</h2>
+
+            <div class="add-pedidos">
+                <nav class="nav-bar" style="margin-bottom: 30px;">
+                    <a href="#" id="show-lanches">Lanches</a>
+                    <a href="#" id="show-bebidas">bebidas</a>
+                    <a href="#">Combos</a>
+                </nav>
+
+                <div class="form-container" id="form-container">
+
+                    <select id="lanche-selector">
+                    </select>
+                    <button id="add-button">Adicionar Lanche</button>
+
+                </div>
+
+                <div class="form-bebidas" id="form-bebidas">
+                    
+                    <select id="bebida-selector">
+                    </select>
+                    <button id="adicionar-bebida">Adicionar Bebida</button>
+                </div>
+
+                
+
+                <table id="pedido-table" style="width: 85%;">
+                    <thead>
+                        <tr>
+                            <th>Lanche</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="pedido-buttons">
+                    <button id="save-button">Salvar Pedido</button>
+                    <button id="clear-button">Limpar Lista</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="historico-main">
+
+            <h2> Histórico de Pedidos</h2>
+            <div>
+                <select id="historico-selector">
+                    <option value="">Selecionar Pedido Salvo</option>
+                </select>
+                <button id="delete-button">Apagar Pedido</button>
+            </div>
+
+            
+
+            <table id="historico-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Número do Pedido</th>
+                        <th>Itens do Pedido</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div class="historico-container">
+
+                <button id="export-button">Exportar Histórico</button>
+                <input type="file" id="import-file" style="display: none;">
+                <button id="import-button">Importar Histórico</button>
+                <button id="delete-history-button">Deletar Histórico</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

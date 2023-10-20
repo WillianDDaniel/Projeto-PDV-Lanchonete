@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: #18198d;
+    color: #fff;
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+#nome-combo {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#item-combo {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+
+}
+
+#preco-item {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#novo-lanche-nome,
+#novo-lanche-preco,
+#novo-bebida-nome,
+#novo-bebida-preco {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#adicionar-lanche,
+#adicionar-bebida,
+#btn-salvar-combo {
+    display: inline-block;
+    background-color: #008458;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#adicionar-lanche:hover,
+#adicionar-bebida:hover {
+    background-color: #45a049;
+}
+
+
+th {
+    width: 200px;
+    border: 1px solid;
+    align-content: center;
+}
+
+td {
+    text-align: center;
+}
+
+.combo-table {
+    margin-top: 10px;
+}
+
+.lista-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista-lanches,
+#lista-bebidas,
+#lista-combos {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#lista-lanches li,
+#lista-bebidas li,
+#lista-combos li {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.apagar-lanche,
+.apagar-bebida,
+.apagar-combo {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.apagar-lanche:hover,
+.apagar-bebida:hover,
+.apagar-combo:hover {
+    background-color: #c0392b;
+}
+
+#salvar-lanches,
+#salvar-bebidas,
+#btn-salvar-combo2 {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#salvar-lanches:hover,
+#salvar-bebidas:hover {
+    background-color: #2980b9;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.main-site {
+    display: flex;
+    width: 80%;
+
+}
+
+.applanche,
+.appbebidas,
+.appcombo {
+    margin-top: 20px;
+    width: 50%;
+}
+
+body nav {
+    width: 90%;
+    height: 55px;
+    margin-top: 15px;
+    background-color: #0c0d6b;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    color: #fff;
+}
+
+body nav a {
+    text-decoration: none;
+    background-color: #1f219a;
+    padding: 10px 10px;
+    margin: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
+
+}

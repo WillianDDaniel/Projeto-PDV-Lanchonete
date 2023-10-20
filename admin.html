@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página Administrativa</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+
+<body>
+
+    <h1>Página Administrativa</h1>
+    <nav>
+        <h2>Cadastrar Produtos</h2>
+        <a id="add-lanches" href="#">Lanches</a>
+        <a id="add-bebidas" href="#">Bebidas</a>
+        <a id="add-combos" href="#">Combos</a>
+    </nav>
+
+    <main class="main-site">
+
+        <div class="applanche" id="applanche">
+            <h3>Cadastrar Lanches</h3>
+            <input type="text" id="novo-lanche-nome" placeholder="Nome do Lanche">
+            <input type="number" id="novo-lanche-preco" placeholder="Preço">
+            <button id="adicionar-lanche">Cadastrar Lanche</button>
+            <button id="salvar-lanches">Salvar Lista de Lanches</button>
+        </div>
+
+        <div class="appbebidas" id="appbebidas">
+            <h3>Cadastrar Bebidas</h3>
+            <input type="text" id="novo-bebida-nome" placeholder="Nome da Bebida">
+            <input type="number" id="novo-bebida-preco" placeholder="Preço">
+            <button id="adicionar-bebida">Cadastrar Bebida</button>
+            <button id="salvar-bebidas">Salvar Lista de Bebidas</button>
+        </div>
+
+        <div class="appcombo" id="appcombo">
+            <h3>Cadastrar Lanches do Combo</h3>
+            <div>
+                <label>Nome do Combo</label><input type="text" id="nome-combo" placeholder="Nome do Combo">
+            </div>
+            <input type="text" id="item-combo" placeholder="Lanche do Combo">
+            <input type="number" id="preco-item" placeholder="Preço">
+            <div>
+                <button id="btn-salvar-combo">Cadastrar Lanche</button>
+                <button id="btn-salvar-combo2">Salvar Combo</button>
+            </div>
+            <div class="combo-table">
+                <table id="combo-table">
+                    <thead>
+                        <tr>
+                            <th>Lanche</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="lista-container" id="tabela-bebidas" style="width: 60%;">
+            <h2>Lista de Bebidas</h2>
+            <ul id="lista-bebidas"></ul>
+        </div>
+
+        <div class="lista-container" id="tabela-lanches" style="width: 60%;">
+            <h2>Lista de Lanches</h2>
+            <ul id="lista-lanches"></ul>
+        </div>
+
+        <div class="lista-container" id="tabela-combos" style="width: 60%">
+            <h2>Lista De Combos</h2>
+            <ul id="lista-combos"></ul>
+        </div>
+
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

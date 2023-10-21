@@ -199,14 +199,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Função para salvar o pedido no histórico
     function salvarCombo() {
-        const nomeCombo = document.getElementById('nome-combo').value
-        if (nomeCombo !== '') {
+        const nome = document.getElementById('nome-combo').value
+        if (nome !== '') {
             const itens = obterItensPedido(); // Obtém a lista de itens do pedido
-            const valorTotal = calcularValorTotal(); // Calcula o valor total do combo
+            const preco = calcularValorTotal(); // Calcula o valor total do combo
             const combo = {
-                nomeCombo,
+                nome,
                 itens,
-                valorTotal
+                preco
             };
 
             const listaDeCombos = JSON.parse(localStorage.getItem('listaDeCombos')) || []; // Obtém o histórico de pedidos do LocalStorage ou cria um array vazio
@@ -269,9 +269,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const combos = JSON.parse(listaDeCombosSalva);
             for (const combo of combos) {
                 const listItem = document.createElement('li');
-                const nomeCombo = combo.nomeCombo;
+                const nomeCombo = combo.nome;
                 // const itensCombo = combo.itens;
-                const valorTotal = combo.valorTotal;
+                const valorTotal = combo.preco;
                 listItem.innerHTML = `${nomeCombo} - ${contarItensRepetidos(combo.itens)} - $${valorTotal} <button class="apagar-combo">Apagar</button>`;
                 listaCombos.appendChild(listItem);
 
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (listaDeCombos) {
             const combos = JSON.parse(listaDeCombos)
-            const novaListaDeCombos = combos.filter(combos => combos.nomeCombo !== nomeDoCombo);
+            const novaListaDeCombos = combos.filter(combos => combos.nome !== nomeDoCombo);
             localStorage.setItem('listaDeCombos', JSON.stringify(novaListaDeCombos));
             carregarCombos()
 
